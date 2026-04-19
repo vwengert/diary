@@ -1,0 +1,11 @@
+@startuml C1_1_Main
+!includeurl https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Context.puml
+title C1 - System Context - Diary Application
+Person(user, "User", "Erstellt Tagebucheintraege und pflegt die taegliche Stimmung")
+System(diary, "Diary Application", "Webanwendung fuer Eintraege, Mood-Tracking und Mood-History")
+System_Ext(auth, "Auth Provider (optional)", "OAuth2/OIDC Login")
+System_Ext(obs, "Monitoring/Logging (optional)", "Aggregiert Logs und Metriken")
+Rel(user, diary, "Nutzt", "HTTPS")
+Rel(diary, auth, "Authentifiziert Benutzer", "HTTPS")
+Rel(diary, obs, "Sendet Logs/Metriken", "HTTPS/OTLP")
+@enduml

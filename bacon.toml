@@ -1,0 +1,6 @@
+[jobs.check-deps]
+command = ["cargo", "deny", "check"]
+need_stdout = true
+
+[keybindings]
+d = "job:check-deps"
