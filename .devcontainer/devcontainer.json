@@ -1,0 +1,25 @@
+{
+  "name": "diary",
+  "build": {
+    "dockerfile": "Dockerfile",
+    "context": ".."
+  },
+  "remoteUser": "vscode",
+  "updateRemoteUserUID": false,
+  "workspaceFolder": "/workspaces/diary",
+  "runArgs": [
+    "--userns=keep-id:uid=1000,gid=1000",
+    "--security-opt=label=disable"
+  ],
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "zerotaskx.rust-extension-pack",
+        "davidanson.vscode-markdownlint",
+        "ms-vscode.test-adapter-converter",
+        "hbenl.vscode-test-explorer",
+        "esbenp.prettier-vscode"
+      ]
+    }
+  }
+}

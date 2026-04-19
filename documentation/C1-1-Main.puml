@@ -1,0 +1,7 @@
+@startuml C1_1_Main
+!includeurl https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Context.puml
+title C1 - System Context - Diary Application
+Person(user, "User", "creates diary entries and his mood")
+System(diary, "Diary Application", "Webapp for diary and mood history")
+Rel(user, diary, "uses", "HTTP")
+@enduml
