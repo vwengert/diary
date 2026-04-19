@@ -1,0 +1,17 @@
+@startuml
+skinparam actorStyle awesome
+left to right direction
+actor User as user
+rectangle Diary {
+    usecase "show mood history" as history
+    usecase "edit daily mood" as edit
+    usecase "edit a diary entry" as entry
+    usecase "show calendar" as calendar
+}
+
+user --> edit
+user --> entry
+user --> history
+user --> calendar
+
+@enduml
