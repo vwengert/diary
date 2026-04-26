@@ -2,6 +2,13 @@
 A full-stack diary project with a backend API and a frontend UI.
 The application lets users create, view, update, and delete diary entries, manage daily mood values, and view mood history over time.
 
+![Static Badge](https://img.shields.io/badge/Rust-1.86+-gold)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Build status](https://github.com/vwengert/diary/actions/workflows/test.yml/badge.svg?branch=main)](https://github.com/vwengert/diary/actions/workflows/test.yml)
+[![codecov](https://codecov.io/github/vwengert/diary/graph/badge.svg?token=BQH6EBWNHS)](https://codecov.io/github/vwengert/diary)
+![Repo Size](https://img.shields.io/github/repo-size/vwengert/diary)
+
+
 ## Core Features
 - Diary entry CRUD (`create`, `read`, `update`, `delete`)
 - Daily mood tracking and mood history
